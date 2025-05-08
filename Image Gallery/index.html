@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - Task 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Image Gallery</h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/cat1.jpeg" alt="Cat" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    
+    <div class="img-gallery">
+        <img src="images/cat1.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat2.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat3.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat4.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat5.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat6.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat7.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat8.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat9.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat10.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat11.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat12.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat13.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat14.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat15.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat16.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat17.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+        <img src="images/cat18.jpeg" alt="Cat" onclick="openFullImg(this.src)">
+    </div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+</script>
+</body>
+</html>
